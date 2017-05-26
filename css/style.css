@@ -1,0 +1,39 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #76daff;
+    color: #76daff;
+}
+
+.quotebox {
+    border: 1px solid beige;
+    border-radius: 6px;
+    background-color: beige;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 40%;
+}
+
+#quote {
+    padding: 50px;
+}
+
+.social {
+    
+}
+
+.btn {
+    float: right;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #76daff;
+    background-color: #76daff;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
