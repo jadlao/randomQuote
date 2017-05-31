@@ -7,11 +7,15 @@ html, body {
     font-size: 1.1em;
 }
 
+.wrapper {
+    padding: 50px;
+}
+
 .quotebox {
     border: 1px solid beige;
     border-radius: 6px;
     background-color: beige;
-    padding: 50px;
+    padding: 30px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -20,22 +24,36 @@ html, body {
 }
 
 #quote {
-    padding: 40px;
-    line-height: 1.5;
+    padding: 20px;
+    line-height: 1.3;
 }
 
-.social i:first-child {
-    color: #76daff;
-}
-
-.social a:hover {
-    color: red;
-}
-
-.btn {
-    float: right;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #76daff;
+.social {
+    height: 44px;
+    width: 44px;
     background-color: #76daff;
+    border: none;
+    position: relative;
+}
+
+.social i {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+}
+
+.social:hover {
+    background-color: rgb(162, 229, 253);
+}
+
+#quoteBtn {
+    float: right;
+    padding: 9px;
+    border-radius: 6px;
+    border: none;
+    background-color: #76daff;
+}
+
+#quoteBtn:hover {
+    background-color: rgb(162, 229, 253);
 }
