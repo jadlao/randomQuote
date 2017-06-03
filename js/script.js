@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Initial quote on page load
-    $.getJSON('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+    $.getJSON('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     function(firstQuote){
         $('#quote').append(firstQuote[0].content + '<p>&mdash; ' + firstQuote[0].title + '</p>');
     });
@@ -10,7 +10,7 @@ $(document).ready(function(){
         
         // Call Design Quotes API
         $.ajax({
-            url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+            url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function(response){
                 //console.log('responded', response);
                 // empty quote box when clicked
@@ -25,7 +25,12 @@ $(document).ready(function(){
     });
     
     $('.social').on('click', function(){
-        // Call Twitter API
+        $('a').attr('href', 'https://twitter.com/intent/tweet?text=' + 'hello');
         
     });
 });
+
+// blocked loading content
+// quote marks css
+// social button share
+// background color change with fade animation
