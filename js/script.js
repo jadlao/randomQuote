@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // Initial quote on page load
+    $.ajaxSetup({ cache: false});
     $.getJSON('https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     function(firstQuote){
         $('#quote').append(firstQuote[0].content + '<p>&mdash; ' + firstQuote[0].title + '</p>');
@@ -10,6 +11,7 @@ $(document).ready(function(){
         
         // Call Design Quotes API
         $.ajax({
+            dataType: 'json',
             url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function(response){
                 //console.log('responded', response);
@@ -20,6 +22,7 @@ $(document).ready(function(){
                 // Data is an array of quotes
                 $('#quote').append(quote.content + '<p>&mdash; ' + quote.title + '</p>');
             },
+            // so content changes on each button click
             cache: false
         });
     });
