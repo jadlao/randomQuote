@@ -6,8 +6,7 @@ $(document).ready(function(){
         
         // Call Design Quotes API
         $.ajax({
-            dataType: 'json',
-            url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+            url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             success: function(response){
                 //console.log('responded', response);
                 // empty quote box when clicked
