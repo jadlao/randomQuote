@@ -8,3 +8,4 @@ Demo: https://jadlao.github.io/randomQuote/
 * I can press a button to tweet out a quote.
 
 # Video Walkthrough:
+![Alt Text](https://image.ibb.co/fBJgma/quotemachine.gif)
