@@ -3,8 +3,6 @@ This website pulls quotes from the ‘Random Famous Quotes’ API and displays a
 
 Stack: Bootstrap, jQuery, jQuery UI, Random Famous Quotes API
 
-Blog post: https://josefadlao.com/blog/posts/2017-06/quote
-
 Demo: https://jadlao.github.io/randomQuote/
 
 # User stories:
